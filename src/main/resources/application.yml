@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: 'kafka-demo'
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: 'my-group-id'
+
+#      Dont need this as configured in code
+#    consumer:
+#      bootstrap-servers: localhost:9092
+#      group-id: group_id
+#      auto-offset-reset: earliest
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      producer:
+#        bootstrap-servers: localhost:9092
+#        key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#        value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+#  spring.kafka.bootstrap-servers=localhost:9092
+#  spring.kafka.consumer.group-id=my-group-id
