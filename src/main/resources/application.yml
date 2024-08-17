@@ -5,6 +5,20 @@ spring:
     bootstrap-servers: localhost:9092
     consumer:
       group-id: 'my-group-id'
+  datasource:
+    url: jdbc:postgresql://localhost:5432/gamer
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+
 
 #      Dont need this as configured in code
 #    consumer:
